@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.bbk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+	<uses-permission  android:name="android.permission.VIBRATE"/>
+    <application
+        android:icon="@drawable/platlogo_jb"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".JBActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+         android:name=".Nyandroid"
+         android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ICSActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="GBActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".BBKActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BeanBag"
+            android:exported="true"
+            android:label="BeanBag"
+            android:icon="@drawable/redbeandroid"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true">
+        </activity>
+    </application>
+
+</manifest>
